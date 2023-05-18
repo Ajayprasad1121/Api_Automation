@@ -1,0 +1,513 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 423000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have the base URL \"https://ae.almosafer.com/en/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ae.almosafer.com/en/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.setBaseUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-18T11:23:55.300Z",
+        "line": 21,
+        "name": "Search for hotels with filters",
+        "description": "",
+        "id": "hotel-search;search-for-hotels-with-filters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4691000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for hotels in \"Dubai\" with the following filters:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dubai\"",
+                  "offset": 23
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.searchHotelsWithFilters(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Filter",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Search type",
+                  "\"hotels\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-in Date",
+                  "\"09-07-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-out Date",
+                  "\"10-07-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Guests",
+                  "\"2_adult\""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should receive a response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.i_should_receive_a_response_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the response should contain hotels in \"Dubai\" with the specified filters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dubai\"",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.verifyHotelsWithFilters(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have the base URL \"https://ae.almosafer.com/en/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ae.almosafer.com/en/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.setBaseUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-18T11:24:00.504Z",
+        "line": 22,
+        "name": "Search for hotels with filters",
+        "description": "",
+        "id": "hotel-search;search-for-hotels-with-filters;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2636000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for hotels in \"Abu Dhabi\" with the following filters:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abu Dhabi\"",
+                  "offset": 23
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.searchHotelsWithFilters(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Filter",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Search type",
+                  "\"hotels\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-in Date",
+                  "\"10-10-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-out Date",
+                  "\"15-10-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Guests",
+                  "\"1_adult\""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should receive a response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.i_should_receive_a_response_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the response should contain hotels in \"Abu Dhabi\" with the specified filters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abu Dhabi\"",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.verifyHotelsWithFilters(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have the base URL \"https://ae.almosafer.com/en/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ae.almosafer.com/en/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.setBaseUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-18T11:24:03.161Z",
+        "line": 23,
+        "name": "Search for hotels with filters",
+        "description": "",
+        "id": "hotel-search;search-for-hotels-with-filters;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1076000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for hotels in \"xyz\" with the following filters:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 23
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.searchHotelsWithFilters(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Filter",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Search type",
+                  "\"\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-in Date",
+                  "\"10-06-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Check-out Date",
+                  "\"15-06-2023\""
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Guests",
+                  "\"1_adult\""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should receive a response with status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.i_should_receive_a_response_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the response should contain hotels in \"xyz\" with the specified filters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.verifyHotelsWithFilters(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have the base URL \"https://ae.almosafer.com/en/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ae.almosafer.com/en/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.setBaseUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-18T11:24:04.246Z",
+        "line": 36,
+        "name": "Search for flights",
+        "description": "",
+        "id": "hotel-search;search-for-flights;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87672000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I search for flights with the following details:",
+            "match": {
+              "location": "cucumberRunner.ResourceStep.searchFlights(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "SearchOption",
+                  "origin-destination",
+                  "departureDate",
+                  "returnDate",
+                  "CabinClass",
+                  "PTC"
+                ]
+              },
+              {
+                "cells": [
+                  "flights",
+                  "DXB-LHR",
+                  "2023-06-01",
+                  "2023-06-10",
+                  "Economy",
+                  "1Adult"
+                ]
+              },
+              {
+                "cells": [
+                  "flights",
+                  "DXB-LHR",
+                  "2023-10-01",
+                  "2023-10-10",
+                  "Business",
+                  "1Adult"
+                ]
+              },
+              {
+                "cells": [
+                  "flights",
+                  "DXB-LHR",
+                  "2023-12-01",
+                  "2023-12-31",
+                  "First",
+                  "1Adult"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should receive a response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.i_should_receive_a_response_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the response should contain flights departing returning on \"DXB\" and \"LHR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DXB\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"LHR\"",
+                  "offset": 69
+                }
+              ],
+              "location": "cucumberRunner.ResourceStep.the_response_should_contain(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Hotel Search",
+    "description": "  As a user\n  I want to search for flights and hotels\n  So that I can find suitable flight option and accommodations for my travel",
+    "id": "hotel-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Almosafer.feature",
+    "tags": []
+  }
+]
