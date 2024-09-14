@@ -18,16 +18,16 @@ Feature: Hotel Search
 
     Examples: 
       | SearchType | location  | checkin    | checkout   | guests  | statuscode |
-      | hotels     | Dubai     | 09-07-2023 | 10-07-2023 | 2_adult |        200 |
-      | hotels     | Abu Dhabi | 10-10-2023 | 15-10-2023 | 1_adult |        200 |
-      |            | xyz       | 10-06-2023 | 15-06-2023 | 1_adult |        404 |
+      | hotels     | Dubai     | 09-07-2025 | 10-07-2025 | 2_adult |        200 |
+      | hotels     | Abu Dhabi | 10-10-2025 | 15-10-2025 | 1_adult |        200 |
+      |            | xyz       | 10-06-2025 | 15-06-2025 | 1_adult |        404 |
 
   Scenario Outline: Search for flights
     When I search for flights with the following details:
       | SearchOption | origin-destination | departureDate | returnDate | CabinClass | PTC    |
-      | flights      | DXB-LHR            | 2023-06-01    | 2023-06-10 | Economy    | 1Adult |
-      | flights      | DXB-LHR            | 2023-10-01    | 2023-10-10 | Business   | 1Adult |
-      | flights      | DXB-LHR            | 2023-12-01    | 2023-12-31 | First      | 1Adult |
+      | flights      | DXB-LHR            | 2025-06-01    | 2025-06-10 | Economy    | 1Adult |
+      | flights      | DXB-LHR            | 2025-10-01    | 2025-10-10 | Business   | 1Adult |
+      | flights      | DXB-LHR            | 2025-12-01    | 2025-12-31 | First      | 1Adult |
     Then I should receive a response with status code <statuscode>
     And the response should contain flights departing returning on "<flightsdeparting>" and "<flightsreturning>"
 
