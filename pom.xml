@@ -41,12 +41,6 @@
 			<artifactId>json-path</artifactId>
 			<version>4.3.0</version>
 		</dependency>
-
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>5.0.8</version>
-		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
