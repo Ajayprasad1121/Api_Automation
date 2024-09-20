@@ -1,0 +1,4 @@
+SearchOption	origin-destination	departureDate	returnDate	CabinClass	PTC
+flights	DXB-LHR	2025-06-01	2025-06-10	Economy	1Adult
+flights	DXB-LHR	2025-10-01	2025-10-10	Business	1Adult
+flights	DXB-LHR	2025-12-01	2025-12-31	First	1Adult
